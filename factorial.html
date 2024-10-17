@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculation</title>
+    <script>
+        function calculateFactorial() {
+            let number = parseInt(prompt("Enter a number to find its factorial:"));
+            let factorial = 1;
+
+            for (let i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+
+            alert("The factorial of " + number + " is " + factorial);
+        }
+    </script>
+</head>
+<body onload="calculateFactorial()">
+</body>
+</html>
